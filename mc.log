@@ -1,0 +1,8 @@
+[2017-12-21T11:48:02.768] [INFO] mc - Log file has been flushed clean.
+[2017-12-21T11:48:02.775] [TRACE] mc - Entering cheese testing
+[2017-12-21T11:48:02.775] [DEBUG] mc - Got cheese.
+[2017-12-21T11:48:02.775] [INFO] mc - Cheese is Gouda.
+[2017-12-21T11:48:02.775] [WARN] mc - Cheese is quite smelly.
+[2017-12-21T11:48:02.775] [ERROR] mc - Cheese is too ripe!
+[2017-12-21T11:48:02.775] [FATAL] mc - Cheese was breeding ground for listeria.
+[2017-12-21T11:48:02.780] [DEBUG] mc - sql connect ok rte(/) lne(_callback(): lib/mysql_object.js:36:16)

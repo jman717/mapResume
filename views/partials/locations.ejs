@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSearch" data-toggle="collapse" data-parent="#accordion" href="#collapseSearch" aria-expanded="true" aria-controls="collapseSearch" onclick="mceo.locations.flip();">
+      <h6 class="panel-title">
+		<div id="locations_div" class="panel-title" style="visibility:hidden;">
+			<strong>
+				<i id="locations_caret" class="fa fa-caret-down fa-lg" style="color:black"></i><i style="color:blue;"><i id="ltitle"> {{ locations_title }}</i></i> 
+			</strong>&nbsp;
+		</div>
+      </h6>
+    </div>
+    <div id="collapseSearch" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSearch">
+		<div id="bingMap" style="position:relative;width:100%;"></div>
+    </div>
+</div>

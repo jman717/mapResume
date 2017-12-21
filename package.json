@@ -1,15 +1,19 @@
 {
-  "name" : "galactica-using-express",
-  "version" : "0.0.1",
-  "scripts" : {
-    "start" : "node server.js"
+  "name": "galactica-using-express",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
   },
-  "dependencies" : {
-    "express" : "^4.6.1"
-	,"serve-favicon" : "latest"
-	,"ejs" : "^1.0.0"
-    ,"mysql": "latest"
-	,"body-parser": "latest"
+  "dependencies": {
+    "body-parser": "latest",
+    "ejs": "^1.0.0",
+    "express": "^4.6.1",
+    "json-blueprint": "../json-blueprint",
+    "log4js": "^2.3.12",
+    "log4js-tagline": "^1.5.1",
+    "mysql": "latest",
+    "node-bing-api": "latest",
+    "serve-favicon": "latest",
+    "url": "latest"
   }
 }
-

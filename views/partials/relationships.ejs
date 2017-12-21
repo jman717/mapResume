@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="relationshipsData" data-toggle="collapse" data-parent="#accordion" href="#collapseData" aria-expanded="false" aria-controls="collapseData" onclick="mceo.relationships.flip();">
+		<h6 class="panel-title">
+			<div id="topics_div" class="panel-title" style="visibility:hidden;">
+				<strong>
+					<i id="relationships_caret" class="fa fa-caret-right fa-lg" style="color:black"></i><i style="color:blue"><i id="ttitle"> {{ topics_title }}</i></i> 
+				</strong>&nbsp;
+			</div>
+		</h6>
+    </div>
+	<div id="collapseData" class="panel-collapse collapse" role="tabpanel" aria-labelledby="relationshipsData">
+		<div class=center>
+			<table id="grid"></table>
+			<div id="pager"></div>
+		</div>
+    </div>
+</div>
+<div id="msgbox" title="Basic dialog">
+</div>

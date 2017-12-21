@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>VROC Tools :: Galactica</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="expires" content="Tue, 23 Aug 2016 18:04:11 -0600" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+<!--
+<link rel="stylesheet" href="/styles/themes/default/bootstrap.css?i=57be35fb4fc66">
+<link href="/styles/css/common.css?i=57be35fb5241a" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/css/font-awesome/css/font-awesome.css?i=57be35fb4d448" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/styles/css/jquery-ui.css?i=57be1c6af40ad">
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+<!--
+<script src="/js/bootstrap.js?i=57be1c6b0fb3d"></script>
+-->
+
+<link href="/styles/css/jquery-ui.css?i=57be35fb4ac71" media="screen" rel="stylesheet" type="text/css" />
+
+<!--
+<link href="/styles/css/font-awesome/css/font-awesome.css?i=57be35fb4d448" media="screen" rel="stylesheet" type="text/css" />
+this link does not work, not bringing in icons, so maybe replace with this line below
+-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<link href="/styles/themes/default/bootstrap.css?i=57be35fb4fc66" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/css/common.css?i=57be35fb5241a" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/jquery-1.9.1.js?i=57be35fb5327b"></script>
+<script type="text/javascript" src="/js/jquery-ui.js?i=57be35fb55a05"></script>
+<script type="text/javascript" src="/js/jqCookie/jquery.cookie.js?i=57be35fb5818c"></script>
+<script type="text/javascript" src="/js/bootstrap.js?i=57be35fb5a908"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js?i=57be35fb5d096"></script>
+<script type="text/javascript" src="/js/proto_string.js?i=57be35fb5d18c"></script>
+<script type="text/javascript" src="/js/proto_date.js?i=57be35fb5f913"></script>
+<script type="text/javascript" src="/js/proto_array.js?i=57be35fb620a1"></script>
+<script type="text/javascript" src="/js/vroc.js?i=57be35fb6482b"></script>
+</head>
+<body>
+<div>
+<div>
+<nav class="navbar navbar-default navbar-top" role="navigation" style="z-index: 1">
+ 	<!-- <div class="container"> -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+    	    <div class="app_logo" style="height: 59px">
+        	  	        	  	<a class="navbar-brand" href="/default/index/index"><img src="/images/vroc_tools_logo_sm.png" /></a>
+        	  	    	    </div>
+    	</div>
+        <div class="navbar-collapse collapse" style="margin-top: 5px">
+        	<ul class="nav navbar-nav">
+        		        		<!--<li><a href="/galactica/index/index"><img src="/images/galactica_bw.png" style="width: 16px;margin-bottom: 6px"/> Galactica</a> -->
+        		<li class="dropdown">
+        			<a href="/galactica" class="dropdown-toggle" data-toggle="dropdown"><img src="/images/galactica_bw.png" style="width: 16px;margin-bottom: 6px"/> Galactica <i class="fa fa-caret-down"></i></a>
+        			<ul class="dropdown-menu">
+	        			<li><a href="/galactica/home"><img src="/images/galactica_bw.png" style="width: 16px;margin-bottom: 6px"/> Home</a>	
+	        			<li><a href="/galactica/index/report/grid/rpt2002dailyUrlSamples.jqGrid"><i class="fa fa-binoculars" title=" view all data"></i> URL Samples: Queries, Filters, Searches</a>	
+	        		</ul>
+        		</li>
+        		        	            		<li class="dropdown">
+        			<a href="/tve" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> Tve <i class="fa fa-caret-down"></i></a>
+        			<ul class="dropdown-menu">
+	        			<li><a href="/tve" class="tveDashboardLink"><i class="fa fa-dashboard"></i> Dashboard</a>	
+	        			<li><a href="https://vdsltechsupp.uswc.uswest.com/rick-test/WebClient.php" target="_blank">
+	        					<i class="fa fa-desktop"></i> Video Player
+	        				</a>
+                            <!-- <a href="javascript:void(0)" 
+                                class="fullScreenLink" 
+                                link=":447/tve/index/video-player" 
+                                protocol="https" 
+                                resize="1" 
+                                width="700" 
+                                height="575" 
+                                ieSupported=1 
+                                >
+                                <i class="fa fa-desktop"></i> Video Player
+                            </a> -->
+                        </li>
+	        			        				<li><a href="/tve/index/scan"><i class="fa fa-edit"></i> Make Scan Entry</a>
+        				<li><a href="/tve/index/view-scan-entries"><i class="fa fa-table"></i> View Scan Entries</a>
+        				        				        		        <li><a href="/tve/report/index"><i class="fa fa-bar-chart-o"></i> Reports</a>
+        		                				        				<li><a href="/tve/admin"><i class="fa fa-cogs"></i> Admin</a>
+        				        				<li><a href="/tve/index/vod-search"><i class="fa fa-search"></i> Vod Search</a>
+        			</ul>
+        		</li>
+        		        		        		<li class="dropdown">
+        			<a href="/vnoc" class="dropdown-toggle" data-toggle="dropdown">VNOC <i class="fa fa-caret-down"></i></a>
+        			<ul class="dropdown-menu">
+        			                             <li class="wallNavItem" wallId="1">
+                            <a href="javascript:void(0)" 
+                                class="fullScreenLink" 
+                                link="/vnoc/index/wall/wallId/1" 
+                                protocol="http" 
+                                resize="1" 
+                                width="1351" 
+                                height="668" 
+                                >
+                                <i class="fa fa-th"></i> Wall - Mineral
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" 
+                                class="fullScreenLink" 
+                                link="/vnoc/index/wall/wallId/2" 
+                                protocol="http" 
+                                resize="1" 
+                                width="1351" 
+                                height="668" 
+                                >
+                                <i class="fa fa-th"></i> Wall - Columbia
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/vnoc/index/miranda-video-export-denver"><i class="fa fa-desktop"></i> Miranda Video Export - Denver</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/vnoc/index/miranda-video-export-columbia"><i class="fa fa-desktop"></i> Miranda Video Export - Columbia</a>
+                        </li>
+                        
+        			</ul>
+        		</li>
+        		        		
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lock"></i> Access Requests <i class="fa fa-caret-down"></i></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="/access/access-request-prism"><i class="fa fa-lock"></i> PRISM Access Request</a></li>
+        				<li><a href="/access/access-request-view1"><i class="fa fa-lock"></i> View1 Access Request</a></li>
+        				        				<li role="separator" class="divider"></li>
+        				<li><a href="/access/view-all"><i class="fa fa-th"></i> View All</a></li>
+        				        			</ul>
+        		</li>
+        		
+        		        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> Administration <i class="fa fa-caret-down"></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="/admin/index"><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="/admin/acl"><i class="fa fa-users"></i> ACL</a></li>
+						<li><a href="/admin/logs"><i class="fa fa-archive"></i> Logs</a></li>
+						<li><a href="/report"><i class="fa fa-bar-chart-o"></i> Reports</a></li>
+						<li><a href="/admin/system-settings"><i class="fa fa-cogs"></i> System Settings</a></li>
+					</ul>
+				</li>
+								
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chain"></i> Links <i class="fa fa-caret-down"></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://home.corp.intranet/portal/server.pt" target="_blank"><i class="fa fa-external-link-square"></i> Century Link Home</a></li>
+						<li><a href="http://home.corp.intranet/portal/server.pt?open=512&objID=1590&mode=2&in_hi_userid=2&cached=true&activetab=CTRL_DropDownTabs-mycompany1" target="_blank"><i class="fa fa-external-link-square"></i> Our Company</a></li>
+						<li><a href="http://home.corp.intranet/portal/server.pt?open=512&objID=1588&mode=2&in_hi_userid=2&cached=true&activetab=CTRL_DropDownTabs-myorganization1" target="_blank"><i class="fa fa-external-link-square"></i> Organizations</a></li>
+						<li><a href="http://home.corp.intranet/portal/server.pt?open=512&objID=1589&mode=2&in_hi_userid=2&cached=true" target="_blank"><i class="fa fa-external-link-square"></i> HRLink</a></li>
+						<li><a href="http://home.corp.intranet/portal/server.pt?open=512&objID=1604&mode=2&in_hi_userid=2&cached=true" target="_blank"><i class="fa fa-external-link-square"></i> Work Tools</a></li>
+						<li><a href="http://emd.uswc.uswest.com/emd/index.html" target="_blank"><i class="fa fa-external-link-square"></i> MNET</a></li>
+						<li><a href="https://net.qintra.com/NET/Login.jsp" target="_blank"><i class="fa fa-external-link-square"></i> NET Notification</a></li>
+						<li><a href="http://vdsltechsupp.uswc.uswest.com/tools/tools.php" target="_blank"><i class="fa fa-external-link-square"></i> Tools</a></li>
+					</ul>
+				</li>
+				
+        	</ul>
+        	
+        	<ul class="nav navbar-nav navbar-right navbar-user">
+        		        		<li>
+        			<a href="#" id="navMyTasks">
+        				<i class="fa fa-tasks"></i> My Tasks:  
+        				<strong style="cursor:default">Open: 0</strong> <strong style="cursor:default"> | Overdue: 0</strong>        			</a>
+        		</li>
+        		        		<!--        		<li><a href="/default/admin/user-preferences"><i class="fa fa-user"></i> Preferences</a></li>
+        		-->
+			<li><a href="https://ohd.ad.qintra.com/default.aspx?action=sid&id=6784" id="supportLink2" target="_blank"><i class="fa fa-envelope"></i> Support</a></li>
+        		<li><a id="logoutLink" href="#" redirectUrl="/galactica/index/index"><i class="fa fa-sign-out"></i> Log Out</a></li>
+        		<!--        		<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="bold text-default">Super Admin</span> 
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+        			<ul class="dropdown-menu">
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="9000" id="2" default_module="/default">
+        					       <i class="fa fa-user"></i> PRISM Server Team        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="8005" id="8" default_module="/default">
+        					       <i class="fa fa-user"></i> Network Team        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="8004" id="7" default_module="/default">
+        					       <i class="fa fa-user"></i> Video Team        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="8003" id="5" default_module="/default">
+        					       <i class="fa fa-user"></i> Tier 4        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="8002" id="6" default_module="/default">
+        					       <i class="fa fa-user"></i> Tier 3        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="8000" id="3" default_module="/default">
+        					       <i class="fa fa-user"></i> Tier 2        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="7999" id="9" default_module="/tve/index/vod-search">
+        					       <i class="fa fa-user"></i> Content Partner        					   </a>
+        					</li>
+        				        					<li>
+        					   <a href="javascript:void(0);" class="switchRole" rank="1000" id="4" default_module="/default">
+        					       <i class="fa fa-user"></i> Guest        					   </a>
+        					</li>
+        				        			</ul>
+        		-->
+         	 </ul>
+        </div>	
+    </div>
+</nav>
+
+</div>
+<br/>
+<div class="jumbotron"> <p>
+This is place to put content. You can put slider, short description about your website and place some links for navigation.
+</p></div>
+</div>
+</body>
+</html>

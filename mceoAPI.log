@@ -1,0 +1,28 @@
+[2017-12-08 21:03:10.457] [INFO] messageLog - Log file has been flushed clean.
+[2017-12-08 21:03:10.457] [INFO] messageLog - Log file has been flushed clean.
+[2017-12-08 21:03:10.459] [DEBUG] messageLog - Debug
+[2017-12-08 21:03:10.459] [DEBUG] messageLog - Debug
+[2017-12-08 21:03:10.459] [INFO] messageLog - Info
+[2017-12-08 21:03:10.459] [INFO] messageLog - Info
+[2017-12-08 21:03:10.460] [WARN] messageLog - Warn
+[2017-12-08 21:03:10.460] [WARN] messageLog - Warn
+[2017-12-08 21:03:10.460] [ERROR] messageLog - Error
+[2017-12-08 21:03:10.460] [ERROR] messageLog - Error
+[2017-12-08 21:03:10.461] [FATAL] messageLog - Fatal
+[2017-12-08 21:03:10.461] [FATAL] messageLog - Fatal
+[2017-12-08 21:03:10.461] [DEBUG] messageLog - logger.clear_logs callback(mceo.init_dbo)
+[2017-12-08 21:03:10.461] [DEBUG] messageLog - logger.clear_logs callback(mceo.init_dbo)
+[2017-12-08 21:03:10.462] [INFO] messageLog - mceo.init_dbo
+[2017-12-08 21:03:10.462] [INFO] messageLog - mceo.init_dbo
+[2017-12-08 21:03:10.462] [INFO] messageLog - mysql_connection.connectThis
+[2017-12-08 21:03:10.462] [INFO] messageLog - mysql_connection.connectThis
+[2017-12-08 21:03:10.471] [INFO] messageLog - mysql_connection.connectThis sql connect
+[2017-12-08 21:03:10.471] [INFO] messageLog - mysql_connection.connectThis sql connect
+[2017-12-08 21:03:10.472] [DEBUG] messageLog - mysql_connection.connectThis callback(mceo.init)
+[2017-12-08 21:03:10.472] [DEBUG] messageLog - mysql_connection.connectThis callback(mceo.init)
+[2017-12-08 21:03:10.473] [INFO] messageLog - mceo.init
+[2017-12-08 21:03:10.473] [INFO] messageLog - mceo.init
+[2017-12-08 21:03:10.474] [INFO] messageLog - set.construct
+[2017-12-08 21:03:10.475] [INFO] messageLog - set.vars
+[2017-12-08 21:03:10.474] [INFO] messageLog - set.construct
+[2017-12-08 21:03:10.475] [INFO] messageLog - set.vars

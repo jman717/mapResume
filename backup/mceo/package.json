@@ -1,0 +1,17 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mceo@0.0.1",
+        "scope": null,
+        "escapedName": "mceo",
+        "name": "mceo",
+        "rawSpec": "0.0.1",
+        "spec": "0.0.1",
+        "type": "version"
+      },
+      "C:\\Users\\Jim\\nodejs\\mobileCEO - v1.1\\node_modules\\readable-stream"
+    ]
+  ]
+  ,"version": "0.0.1"
+}
