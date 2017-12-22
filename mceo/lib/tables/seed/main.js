@@ -11,7 +11,7 @@ var main = module.exports = table_main.extend({
 		t.log = t.parent.log;
 		t.logger = t.parent.logger; 
 		t.dbo = t.parent.dbo;
-		t.schema = t.parent.dbo.schema;  //get schema from here
+		t.schema = t.parent.dbo.schema;  
 		t.logger.trace('').tag(t.log.rte).tag(t.log.act).tag(t.log.lne).tagline();
 	},
 	return_jo:function(){
