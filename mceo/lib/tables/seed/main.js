@@ -9,9 +9,9 @@ var main = module.exports = table_main.extend({
 		var t = this;
 		t.parent = parent;
 		t.log = t.parent.log;
-		t.logger = t.parent.logger;
+		t.logger = t.parent.logger; 
 		t.dbo = t.parent.dbo;
-		t.schema = t.parent.dbo.schema;
+		t.schema = t.parent.dbo.schema;  //get schema from here
 		t.logger.trace('').tag(t.log.rte).tag(t.log.act).tag(t.log.lne).tagline();
 	},
 	return_jo:function(){
