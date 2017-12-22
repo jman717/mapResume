@@ -2,7 +2,7 @@
   "name": "galactica-using-express",
   "version": "0.0.1",
   "scripts": {
-    "start": "node server.js"
+    "start": "node mapResume.js"
   },
   "dependencies": {
     "body-parser": "latest",
