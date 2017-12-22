@@ -71,7 +71,7 @@ var main = module.exports = table_main.extend({
 				,{ id : "40", "include" : "no", "name" : "p & t storm plotters hutchenson ks", "contact": "", "web": "", "message": "yes", "lat": 38.060845, "lon": -97.929774  ,"msg_msg": "weather tracking"}
 				,{ id : "41", "include" : "no", "name" : "blockbuster ft worth tx", "contact": "", "web": "http://www.blockbuster.com/", "message": "yes", "lat": 32.755488, "lon": -97.330766  ,"msg_msg": "video rentals"}
 				,{ id : "42", "include" : "no", "name" : "pclender honolulu hi", "contact": "", "web": "", "message": "yes", "lat": 21.306944, "lon": -157.858333  ,"msg_msg": "mortgage lending"}
-				,{ id : "43", "include" : "no", "name" : "pclender phillippine", "contact": "", "web": "", "message": "yes", "lat": 14.6041667, "lon": 120.9822222  ,"msg_msg": "Manage offshort development team for mortgage lending SaaS software."}
+				,{ id : "43", "include" : "no", "name" : "pclender philippine", "contact": "", "web": "", "message": "yes", "lat": 14.6041667, "lon": 120.9822222  ,"msg_msg": "Manage offshort development team for mortgage lending SaaS software."}
 				,{ id : "44", "include" : "no", "name" : "barclays bank london uk", "contact": "yes", "web": "https://www.banking.barclaysus.com/index.html?refid=BBDMSPSTPEX0217&gclid=CNH466fmndQCFcIdfwodX0UFcQ", "message": "yes", "lat": 51.507351, "lon": -0.127758 ,"contact_msg": "contact message","msg_msg": "banking, check sorting"}
 			];
 			jo.map = {zoom: {default: 0}};
