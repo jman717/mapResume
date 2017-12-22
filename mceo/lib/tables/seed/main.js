@@ -2,7 +2,7 @@ const Class = require('./../../class');
 const table_main = require('./../table_main');
 
 var main = module.exports = table_main.extend({
-	schema: 'mceo',
+	schema: null,
 	name: 'main',
 	log: null,
 	construct: function(parent){
@@ -11,6 +11,7 @@ var main = module.exports = table_main.extend({
 		t.log = t.parent.log;
 		t.logger = t.parent.logger;
 		t.dbo = t.parent.dbo;
+		t.schema = t.parent.dbo.schema;
 		t.logger.trace('').tag(t.log.rte).tag(t.log.act).tag(t.log.lne).tagline();
 	},
 	return_jo:function(){
