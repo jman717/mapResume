@@ -12,6 +12,7 @@
     "log4js-tagline": "^1.5.1",
     "mysql": "latest",
     "node-bing-api": "latest",
+    "request-ip": "^2.0.2",
     "serve-favicon": "latest",
     "url": "latest"
   }
