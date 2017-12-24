@@ -8,11 +8,11 @@
     "body-parser": "latest",
     "ejs": "^2.5.7",
     "express": "^4.6.1",
+    "ipware": "^1.0.0",
     "log4js": "^2.3.12",
     "log4js-tagline": "^1.5.1",
     "mysql": "latest",
     "node-bing-api": "latest",
-    "request-ip": "^2.0.2",
     "serve-favicon": "latest",
     "url": "latest"
   }
