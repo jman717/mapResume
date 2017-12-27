@@ -68,7 +68,7 @@ var mBNG = Class.extend({
 				t.map.setView({bounds:boundingBox });
 			}
 		}catch(e){
-			alert(fn+' error: '+e.message);
+			//alert(fn+' error: '+e.message);   //Firefox will report an error here, just ignore it.
 		}
 	},
 	render: function() {
