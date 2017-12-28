@@ -15,7 +15,7 @@ var lib = path.join(path.dirname(fs.realpathSync(__filename)), './lib');
 var router = express.Router();
 var vpath = __dirname + '/views/';
 //app.use(favicon(__dirname + '/favicon.ico'));  
-app.use(favicon(path.join(__dirname,'favicon.ico')));
+app.use(favicon(path.join(__dirname,'favicon1.png')));
 
 
 //var blueprint = jb();
