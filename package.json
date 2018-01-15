@@ -5,6 +5,7 @@
     "start": "node mapResume.js"
   },
   "dependencies": {
+    "aa": "^0.1.40",
     "body-parser": "latest",
     "ejs": "^2.5.7",
     "express": "^4.6.1",
@@ -13,6 +14,9 @@
     "log4js-tagline": "^1.5.1",
     "mysql": "latest",
     "node-bing-api": "latest",
+    "promise-factory": "^1.0.4",
+		"promise-class-factory": "../promise-class-factory",
+		"promise-function-factory": "../promise-function-factory",
     "serve-favicon": "latest",
     "url": "latest"
   }

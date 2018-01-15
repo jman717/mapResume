@@ -7,11 +7,12 @@ var express = require("express")
 	,conf = require('./configs/server.js')
 	,app = express();
 
-
-var hso = new hs();
-
 var path = require('path');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), './lib');
+var factory = path.join(path.dirname(fs.realpathSync(__filename)), './lib/factory');
+
+var hso = new hs({"factory_dir": factory});
+
 var router = express.Router();
 var vpath = __dirname + '/views/';
 //app.use(favicon(__dirname + '/favicon.ico'));  
@@ -92,7 +93,10 @@ http://www.popolana.com:49200/get/map/access?uid=f2c2aca33b
 app.get(hso.routes.getMapAccess, hso.processRoute);
 app.get(hso.routes.getMapAccessData, hso.processRoute);
 app.get(hso.routes.getGridRebuild, hso.processRoute);
-
+app.post(hso.routes.postTestAsync, hso.processRoute);
+app.post(hso.routes.postTestPromiseFactory, hso.processRoute);
+app.post(hso.routes.postClassFactory, hso.processRoute);
+app.post(hso.routes.postPromiseToolkit, hso.processRoute);
 
 app.use("/",router);
 
