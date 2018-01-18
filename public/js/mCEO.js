@@ -30,6 +30,24 @@ var dialog_box = Class.extend({
 	}
 });
 
+var data = {  
+  title: 'Professional Node.js',
+  author: 'Pedro Teixeira'
+};
+
+var Book = React.createClass({  
+  render: function() {
+    return (
+      <tr>
+        <td>{this.props.data.title}</td>
+        <td>{this.props.data.author}</td>
+      </tr>
+    );
+  }
+});
+
+React.render(<Book data={data}/>, document.getElementById('container'));  
+
 var mCEO = Class.extend({
 	canvas: null,
 	overlays: null,

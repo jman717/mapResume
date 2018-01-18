@@ -71,6 +71,22 @@ router.get("/",function(req,res){
 });
 */
 
+var React = require('react');
+
+class HelloMessage extends React.Component {
+  render() {
+    return '<div>Hello {this.props.name}</div>';
+  }
+}
+
+module.exports = HelloMessage;
+
+router.get("/react/test",function(req,res){
+  res.render(vpath + "pages/index", { name: 'Jim Manton' });
+});
+
+module.exports = HelloMessage;
+
 router.get("/home",function(req,res){
 	res.render(vpath + "pages/index");
 });
