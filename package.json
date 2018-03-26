@@ -14,9 +14,8 @@
     "log4js-tagline": "^1.5.1",
     "mysql": "latest",
     "node-bing-api": "latest",
-    "promise-class-factory": "../promise-class-factory",
     "promise-factory": "^1.0.4",
-    "promise-function-factory": "../promise-function-factory",
+    "promise-toolkit-factory": "0.0.5",
     "react": "^16.2.0",
     "serve-favicon": "latest",
     "url": "latest"

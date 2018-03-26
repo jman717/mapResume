@@ -73,6 +73,7 @@ var main = module.exports = table_main.extend({
 				,{ id : "42", "include" : "no", "name" : "pclender honolulu hi", "contact": "", "web": "", "message": "yes", "lat": 21.306944, "lon": -157.858333  ,"msg_msg": "mortgage lending"}
 				,{ id : "43", "include" : "no", "name" : "pclender philippine", "contact": "", "web": "", "message": "yes", "lat": 14.6041667, "lon": 120.9822222  ,"msg_msg": "Manage offshort development team for mortgage lending SaaS software."}
 				,{ id : "44", "include" : "no", "name" : "barclays bank london uk", "contact": "yes", "web": "https://www.banking.barclaysus.com/index.html?refid=BBDMSPSTPEX0217&gclid=CNH466fmndQCFcIdfwodX0UFcQ", "message": "yes", "lat": 51.507351, "lon": -0.127758 ,"contact_msg": "contact message","msg_msg": "banking, check sorting"}
+				,{ id : "45", "include" : "no", "name" : "carosh", "contact": "yes", "web": "http://www.carosh.com/", "message": "yes", "lat": 41.42251, "lon": -87.33542 ,"contact_msg": "contact message","msg_msg": "hipaa compliance solutions"}
 			];
 			jo.map = {zoom: {default: 0}};
 			jo.map.init = {

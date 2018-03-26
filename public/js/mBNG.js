@@ -11,7 +11,7 @@ var mBNG = Class.extend({
 		var t = this;
 		var fn='map_marker_grid.set_locations';
 		try{
-			var mgd = mceo.map_marker_grid.server_data;
+			var mgd = mceo.map_marker_grid.grid_data_jo;
 			if(typeof mgd != 'object')
 				throw new Error('no data object');
 			if(typeof mgd.ggrid != 'object')
@@ -31,7 +31,7 @@ var mBNG = Class.extend({
 		var fn = "mBNG.refresh_pins";
 		t.map.entities.clear(); 
 		var mo, mp;
-		var data = mceo.map_marker_grid.server_data.ggrid.data;
+		var data = mceo.map_marker_grid.grid_data_jo.ggrid.data;
 		try{
 			t.refresh_boundingBox();
 			for(var i=0; i < data.length; i++){
@@ -50,7 +50,7 @@ var mBNG = Class.extend({
 		var t = this;
 		var fn = "mBNG.refresh_boundingBox";
 		try{
-			var data = mceo.map_marker_grid.server_data.ggrid.data;
+			var data = mceo.map_marker_grid.grid_data_jo.ggrid.data;
 			if(typeof data[0].location != 'undefined'){
 				var LLA = [];
 				var cnt = 0;
@@ -75,7 +75,7 @@ var mBNG = Class.extend({
 		var t = this;
 		var fn = "mBNG.render";
 		try{
-			var mgd = mceo.map_marker_grid.server_data;
+			var mgd = mceo.map_marker_grid.grid_data_jo;
 			if(typeof mgd == 'undefined')
 				throw new Error("data is not set");
 			if(typeof mgd.map == 'undefined')
@@ -95,7 +95,7 @@ var mBNG = Class.extend({
 			
 //alert(fn+' zoom='+t.map.zoom);			
 			t.refresh_pins();
-			var map = mceo.map_marker_grid.server_data.map;
+			var map = mceo.map_marker_grid.grid_data_jo.map;
 			if(map.zoom.default > 0)
 				t.map.setView({zoom: map.zoom.default});
 			//t.map.setView({zoom:0});

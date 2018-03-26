@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<title>mobile CEO</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta http-equiv="expires" content="Sun, 16 Apr 2017 14:49:08 -0500" >
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" >
+
+<!--
+<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+-->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon1.png">
+
+<link href="/styles/css/jquery-ui.css?i=57be35fb4ac71" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/jqgrid/css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css" />
+
+<link href="/styles/themes/default/bootstrap.css?i=57be35fb4fc66" media="screen" rel="stylesheet" type="text/css" />
+
+<!-- the next line is for the page up, page down, first and last page buttons 
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css" />
+-->
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="https://jqueryui.com/resources/demos/style.css" />
+
+<link href="/styles/font-awesome-4.6.3/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/styles/css/common.css?i=57be35fb5241a" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/jquery-1.9.1.js?i=57be35fb5327b"></script>
+<script type="text/javascript" src="/js/jquery-ui.js?i=57be35fb55a05"></script>
+<script type="text/javascript" src="/js/jqCookie/jquery.cookie.js?i=57be35fb5818c"></script>
+<script type="text/javascript" src="/js/bootstrap.js?i=57be35fb5a908"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js?i=57be35fb5d096"></script>
+<script type="text/javascript" src="/js/proto_string.js?i=57be35fb5d18c"></script>
+<script type="text/javascript" src="/js/proto_date.js?i=57be35fb5f913"></script>
+<script type="text/javascript" src="/js/proto_array.js?i=57be35fb620a1"></script>
+<!-- <script type="text/javascript" src="/js/galactica_config.js?i=57be35fb6482b"></script> -->
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol'></script>
+<script type="text/javascript" src="/js/mLIB.js?i=57be35fb6482b"></script>
+<script type="text/javascript" src="/js/mROL.js?i=57be35fb6482b"></script>
+<script type="text/javascript" src="/js/mCEO.js?i=57be35fb6482b"></script>
+<script src="https://unpkg.com/vue"></script>
+
+<script type="text/javascript" src="/js/jqgrid/src/i18n/grid.locale-en.js?r=57c4cfaf18124"></script>
+<script type="text/javascript" src="/js/jqgrid/js/jquery.jqGrid.min.js?r=57c4cfaf1a96e"></script>
+<script type="text/javascript" src="/js/jqgrid/plugins/grid.setcolumns.js?r=57c4cfaf1d175"></script>
+
+<script type='text/javascript'
+	src='http://www.bing.com/api/maps/mapcontrol?callback=getmCEO' 
+	async defer>
+	</script>
+
+<script type='text/javascript'>
+	function getmCEO()
+	{		
+		mceo=new mCEO({});
+		mceo.roles_grid = new roles_grid(mceo);
+	//split screen stuff: https://answers.yahoo.com/question/index?qid=20090701021331AAkvbJz
+		//mceo.map_marker_grid = new map_marker_grid(mceo);
+		//mceo.setMap({loc: '#mceo', 'bing': {loc: '#bingMap', creds:'cbJ2hvDwZYrOqsYT4w95~PSbA7U11CASn8MZ_Z5ymUQ~AhjkHM8f0Q1l5ZydAnz9l7Bs-0-iz6M0UfZBISKqoe_o0oUPUzKgTjNi965KbKX3'}});
+		//mceo.server_data.init(mceo.server_data.process);
+	}
+</script>
+
+
+

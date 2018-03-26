@@ -10,8 +10,9 @@ var express = require("express")
 var path = require('path');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), './lib');
 var factory = path.join(path.dirname(fs.realpathSync(__filename)), './lib/factory');
+var views_pages = path.join(path.dirname(fs.realpathSync(__filename)), './views/pages');
 
-var hso = new hs({"factory_dir": factory});
+var hso = new hs({"factory_dir": factory, "views_pages_dir": views_pages});
 
 var router = express.Router();
 var vpath = __dirname + '/views/';
@@ -81,12 +82,6 @@ class HelloMessage extends React.Component {
 
 module.exports = HelloMessage;
 
-router.get("/react/test",function(req,res){
-  res.render(vpath + "pages/index", { name: 'Jim Manton' });
-});
-
-module.exports = HelloMessage;
-
 router.get("/home",function(req,res){
 	res.render(vpath + "pages/index");
 });
@@ -103,11 +98,12 @@ router.get("/contact",function(req,res){
   res.sendFile(vpath + "contact.html");
 });
 /*
-http://localhost:3085/get/map/access?uid=f2c2aca33b
+http://localhost:4000/get/map/access?uid=f2c2aca33b
 http://www.popolana.com:49200/get/map/access?uid=f2c2aca33b
 */
 app.get(hso.routes.getMapAccess, hso.processRoute);
 app.get(hso.routes.getMapAccessData, hso.processRoute);
+app.get(hso.routes.getRolesGrid, hso.processRoute);
 app.get(hso.routes.getGridRebuild, hso.processRoute);
 app.post(hso.routes.postTestAsync, hso.processRoute);
 app.post(hso.routes.postTestPromiseFactory, hso.processRoute);
