@@ -23,7 +23,7 @@ class roles_grid{
 		t.set_grid();
 	}
 
-	set_funcs(	){
+	set_funcs(grid_data_jo){
 		var t = this;
 		var fn='roles_grid.set_funcs';
 		try{
